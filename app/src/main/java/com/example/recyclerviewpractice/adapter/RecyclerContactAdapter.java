@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,8 +39,13 @@ public class RecyclerContactAdapter extends RecyclerView.Adapter<RecyclerContact
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
+        TextView txtName, txtNumber;
+        ImageView imgContact;
         public ViewHolder(View itemView){
             super(itemView);
+            txtName = itemView.findViewById(R.id.contact_name_text_view);
+            txtNumber = itemView.findViewById(R.id.contact_number_text_view);
+            imgContact = itemView.findViewById(R.id.contact_image_view);
         }
     }
 
