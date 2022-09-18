@@ -1,10 +1,13 @@
 package com.example.recyclerviewpractice.adapter;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.recyclerviewpractice.R;
 
 class ProgramingAdapter extends RecyclerView.Adapter<ProgramingAdapter.ProgramingViewHolder> {
 
@@ -17,7 +20,9 @@ class ProgramingAdapter extends RecyclerView.Adapter<ProgramingAdapter.Programin
     @NonNull
     @Override
     public ProgramingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.list_item_layout, parent, false);
+        return new ProgramingViewHolder(view);
     }
 
     @Override
