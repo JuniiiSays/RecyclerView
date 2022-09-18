@@ -13,7 +13,7 @@ import com.example.recyclerviewpractice.R;
 
 import org.w3c.dom.Text;
 
-class ProgramingAdapter extends RecyclerView.Adapter<ProgramingAdapter.ProgramingViewHolder> {
+ public class ProgramingAdapter extends RecyclerView.Adapter<ProgramingAdapter.ProgramingViewHolder> {
 
     String[] data;
 
