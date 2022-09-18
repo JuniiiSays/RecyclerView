@@ -1,2 +1,2 @@
 # RecyclerView
-This is a practice project for understand and master the skill of RecyclerView
+This is a practice project for understanding and mastering the skill of RecyclerView
